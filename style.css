@@ -1,0 +1,108 @@
+/*4. style the navigation bar*/
+/*4.1.target navigation bar using a class selector.*/
+.navbar {
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 1em;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;  
+}
+
+/*4.2. the unordered list inside the navigation bar*/
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*4.3. the list items inside the unordered list*/
+.navbar ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+/*4.4. the anchor tags inside the list items*/
+.navbar ul li a {
+  color: #fff;
+}
+
+/*5. style the main content*/
+/*5.1: Add top padding to the main content area */
+.main-content {
+  padding-top: 5em;
+}
+
+/*5.2: Style every section within the main content */
+section {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+/*5.3: Style elements inside the home section */
+.main-content #home h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+#home p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/*6. style the portfolio section*/
+/* 6.1. Target the portfolio container and set layout */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+/* 6.2. Style each portfolio item card */
+.portfolio-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+/* 6.3. Style headings inside portfolio items */
+.portfolio-item h3 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* 6.4. Style paragraphs inside portfolio items */
+.portfolio-item p {
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+/* 6.5. Style images inside portfolio items */
+.portfolio-item img {
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+/* 7. Add hover effect to portfolio items */
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+/* 8. Style the footer */
+#footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
